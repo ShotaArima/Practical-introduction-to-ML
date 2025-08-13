@@ -1,6 +1,6 @@
 # Practical-introduction-to-ML
 参考図書
-- [実務で役立つPython機械学習入門 ~課題解決のためのデータ分析の基礎~](https://www.shoeisha.co.jp/book/detail/9784798184890)
+- [実務で役立つPython機械学習入門 \~課題解決のためのデータ分析の基礎\~](https://www.shoeisha.co.jp/book/detail/9784798184890)
 
 ## 章立て
 - Chapter 2
