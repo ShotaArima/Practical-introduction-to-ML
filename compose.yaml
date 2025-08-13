@@ -1,0 +1,8 @@
+services:
+  Chap2-sec02:
+    image: ghcr.io/astral-sh/uv:python3.12-bookworm
+    volumes:
+      - .:/app/
+    working_dir: /app/
+    tty: true
+    command: bash
