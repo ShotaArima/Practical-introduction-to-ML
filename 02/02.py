@@ -33,3 +33,16 @@ print(df[['rent_price', 'pred_rent_price']])
 
 # 評価
 print("MAE:", mean_absolute_error(df[target_col], df['pred_rent_price']))
+
+
+# 高い精度のモデルができたとした際の汎化性能について
+
+# Load the dataset
+df_pred = pd.read_csv('data/realestate_pred.csv')
+print(df_pred.head())
+
+featrure_cols = ['house_area', 'distance']
+X_pred = df_pred[featrure_cols]
+X_pred['pred_rent_price'] = model.predict(X_pred)
+
+print(X_pred.head())
