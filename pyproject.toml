@@ -7,4 +7,5 @@ requires-python = ">=3.12"
 dependencies = [
     "pandas>=2.3.1",
     "scikit-learn>=1.7.1",
+    "u8darts>=0.36.0",
 ]
