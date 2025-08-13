@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 from sklearn.linear_model import Ridge
+from sklearn.metrics import mean_absolute_error
 
 # データの読み取り
 path = 'data/realestate_train.csv'
@@ -30,3 +31,5 @@ model.fit(X, y)
 df['pred_rent_price'] = model.predict(X)
 print(df[['rent_price', 'pred_rent_price']])
 
+# 評価
+print("MAE:", mean_absolute_error(df[target_col], df['pred_rent_price']))
